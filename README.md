@@ -6,6 +6,8 @@
 [![Build Status](https://travis-ci.org/RBN1993/iwvg-ecosystem-robinson-ganchala.svg?branch=develop)](https://travis-ci.org/RBN1993/iwvg-ecosystem-robinson-ganchala)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-ecosystem-robinson-ganchala&metric=alert_status)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Aiwvg-ecosystem-robinson-ganchala)
 [![BCH compliance](https://bettercodehub.com/edge/badge/RBN1993/iwvg-ecosystem-robinson-ganchala?branch=develop)](https://bettercodehub.com/)
+[![Heroku broken](https://iwvg-ecosystem-robinson-gancha.herokuapp.com/system/version-badge)](https://iwvg-ecosystem-robinson-gancha.herokuapp.com/swagger-ui.html)
+
 ## Ecosistema
 * Java
 * Maven
