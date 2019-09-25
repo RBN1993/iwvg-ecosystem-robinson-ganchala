@@ -37,4 +37,11 @@ public class FractionTest {
     void testSubtractInteger() {
         assertEquals(-1.3333333333333333, fraction.subtractInteger(2));
     }
+
+    @Test
+    void testIsEquals() {
+        Fraction fraction2 = new Fraction(7, 3);
+        assertEquals(false, fraction.isEqual(fraction, fraction2));
+    }
+
 }
