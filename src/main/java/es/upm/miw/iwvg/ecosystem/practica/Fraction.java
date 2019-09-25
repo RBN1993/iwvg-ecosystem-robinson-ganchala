@@ -53,4 +53,15 @@ public class Fraction {
         return denominator;
     }
 
+    public double sumInteger(int i) {
+        return (double) (this.numerator + i * this.denominator) / this.denominator;
+    }
+
+    public double subtractInteger(int i) {
+        return (double) (this.numerator - i * this.denominator) / this.denominator;
+    }
+
+    public boolean isEqual(Fraction fraction, Fraction fraction2) {
+        return fraction.numerator == fraction2.numerator && fraction.denominator == fraction2.denominator;
+    }
 }
