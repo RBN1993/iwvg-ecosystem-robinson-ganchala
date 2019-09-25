@@ -1,9 +1,11 @@
 package es.upm.miw.iwvg.ecosystem.practica;
 
+import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PointTest {
     private Point point;
@@ -11,6 +13,12 @@ class PointTest {
     @BeforeEach
     void before() {
         point = new Point(2, 3, 1);
+    }
+
+    @Test
+    void testCheckMaxLimit() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> new Point(101, 1, 1));
+        LogManager.getLogger(this.getClass()).debug(exception.getMessage());
     }
 
     @Test

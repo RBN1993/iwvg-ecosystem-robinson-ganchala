@@ -1,5 +1,6 @@
 package es.upm.miw.iwvg.ecosystem.practica;
 
+
 public class Point {
     private int x;
 
@@ -11,6 +12,13 @@ public class Point {
         this.x = x;
         this.y = y;
         this.z = z;
+        this.checkMaxLimit();
+    }
+
+    private void checkMaxLimit() {
+        if ((this.x > 100) || (this.y > 100 || (this.z > 100))) {
+            throw new ArithmeticException("Point coordinates can't be greater than 100");
+        }
     }
 
     public Point(int xyz) {
