@@ -1,20 +1,20 @@
 package es.upm.miw.iwvg.ecosystem.practica;
 
 public class User {
-    private int number;
+    private int age;
 
     private String name;
 
     private String familyName;
 
-    public User(int number, String name, String familyName) {
-        this.number = number;
+    public User(int age, String name, String familyName) {
+        this.age = age;
         this.name = this.format(name);
         this.familyName = this.format(familyName);
     }
 
     private String format(String string) {
-        return string.trim().substring(0, 1).toUpperCase() + string.substring(1).toLowerCase();
+        return string.trim().toUpperCase();
     }
 
     public String fullName() {
@@ -29,8 +29,8 @@ public class User {
         return this.name.substring(0, 1) + ".";
     }
 
-    public int getNumber() {
-        return this.number;
+    public int getAge() {
+        return this.age;
     }
 
     public String getName() {
