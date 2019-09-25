@@ -14,16 +14,22 @@ public class FractionTest {
     }
 
     @Test
-    void testNumerator(){
-        assertEquals(2,fraction.getNumerator());
+    void testNumerator() {
+        assertEquals(2, fraction.getNumerator());
     }
 
     @Test
-    void testDenominator(){
-        assertEquals(3,fraction.getDenominator());
+    void testDenominator() {
+        assertEquals(3, fraction.getDenominator());
     }
+
     @Test
-    void testDecimal(){
-        assertEquals(0.6666666666666666,fraction.decimal());
+    void testDecimal() {
+        assertEquals(0.6666666666666666, fraction.decimal());
+    }
+
+    @Test
+    void testSumInteger() {
+        assertEquals(2.6666666666666665, fraction.sumInteger(2));
     }
 }
