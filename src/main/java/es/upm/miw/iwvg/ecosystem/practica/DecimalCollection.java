@@ -23,7 +23,6 @@ public class DecimalCollection {
     public double sum() {
         this.validateIsNullOrEmpty();
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
-
     }
 
     private void validateIsNullOrEmpty() {
@@ -36,4 +35,16 @@ public class DecimalCollection {
         this.validateIsNullOrEmpty();
         return Collections.max(this.collection);
     }
+
+    public double lower() {
+        this.validateIsNullOrEmpty();
+        return Collections.min(this.collection);
+    }
+
+    public double average() {
+        this.validateIsNullOrEmpty();
+        return this.collection.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
+    }
+
+
 }
