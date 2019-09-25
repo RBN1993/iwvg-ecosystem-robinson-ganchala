@@ -32,4 +32,9 @@ public class FractionTest {
     void testSumInteger() {
         assertEquals(2.6666666666666665, fraction.sumInteger(2));
     }
+
+    @Test
+    void testSubtractInteger() {
+        assertEquals(-1.3333333333333333, fraction.subtractInteger(2));
+    }
 }

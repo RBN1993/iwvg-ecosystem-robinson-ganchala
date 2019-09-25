@@ -56,4 +56,8 @@ public class Fraction {
     public double sumInteger(int i) {
         return (double) (this.numerator + i * this.denominator) / this.denominator;
     }
+
+    public double subtractInteger(int i) {
+        return (double) (this.numerator - i * this.denominator) / this.denominator;
+    }
 }
