@@ -21,6 +21,10 @@ public class User {
         return this.name + " " + this.familyName;
     }
 
+    public String formalFullName() {
+        return this.familyName + ", " + this.name;
+    }
+
     public String initials() {
         return this.name.substring(0, 1) + ".";
     }

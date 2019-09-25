@@ -33,8 +33,13 @@ public class UserTest {
     }
 
     @Test
+    void testFormalFullName() {
+        assertEquals("García" + ", " + "Fernando", user.formalFullName());
+    }
+
+
+    @Test
     void testInitals() {
         assertEquals("F.", user.initials());
-
     }
 }
