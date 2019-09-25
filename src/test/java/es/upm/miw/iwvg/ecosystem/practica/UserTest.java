@@ -15,26 +15,31 @@ public class UserTest {
 
     @Test
     void testInfoUser() {
-        assertEquals(18, user.getNumber());
-        assertEquals("Fernando", user.getName());
-        assertEquals("García", user.getFamilyName());
+        assertEquals(18, user.getAge());
+        assertEquals("FERNANDO", user.getName());
+        assertEquals("GARCÍA", user.getFamilyName());
     }
 
     @Test
     void testFormatUser() {
         user = new User(18, "feRnando", "garcíA");
-        assertEquals("Fernando", user.getName());
-        assertEquals("García", user.getFamilyName());
+        assertEquals("FERNANDO", user.getName());
+        assertEquals("GARCÍA", user.getFamilyName());
     }
 
     @Test
     void testFullName() {
-        assertEquals("Fernando" + " " + "García", user.fullName());
+        assertEquals("FERNANDO" + " " + "GARCÍA", user.fullName());
     }
+
+    @Test
+    void testFormalFullName() {
+        assertEquals("GARCÍA" + ", " + "FERNANDO", user.formalFullName());
+    }
+
 
     @Test
     void testInitals() {
         assertEquals("F.", user.initials());
-
     }
 }
