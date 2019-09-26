@@ -46,5 +46,9 @@ public class DecimalCollection {
         return this.collection.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
     }
 
+    public double addPositiveDecimals() {
+        this.validateIsNullOrEmpty();
+        return this.collection.stream().filter(value -> value > 0).mapToDouble(Double::doubleValue).sum();
+    }
 
 }

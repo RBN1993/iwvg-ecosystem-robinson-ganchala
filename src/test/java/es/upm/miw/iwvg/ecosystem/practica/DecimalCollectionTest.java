@@ -66,4 +66,15 @@ class DecimalCollectionTest {
         ArithmeticException exception = assertThrows(ArithmeticException.class, () -> new DecimalCollection().average());
         LogManager.getLogger(this.getClass()).debug(exception.getMessage());
     }
+
+    @Test
+    void testAddPositiveDecimals() {
+        assertEquals(7, this.decimalCollection.addPositiveDecimals(), 10e-5);
+    }
+
+    @Test
+    void testAddPositiveDecimalsArithmeticExceptionIfEmpty() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> new DecimalCollection().addPositiveDecimals());
+        LogManager.getLogger(this.getClass()).debug(exception.getMessage());
+    }
 }
